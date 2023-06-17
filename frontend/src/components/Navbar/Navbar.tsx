@@ -13,15 +13,15 @@ const Navbar: React.FC = () => {
 
     return (
         <div className="container">
-        <img src="" alt="zanooza logo" /> 
+        <img src='' alt="zanooza-logo" /> 
     <header >
       <nav>
         <ul>
-            <li><a href="#">Game experiences </a></li>
-            <li><a href="#">Events </a></li>
-            <li><a href="#">Blog </a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About Us </a></li>              
+            <li><a href="/Game-experiences">Game experiences </a></li>
+            <li><a href="/Events">Events </a></li>
+            <li><a href="/Blog">Blog </a></li>
+            <li><a href="/Shop">Shop</a></li>
+            <li><a href="/About-Us">About Us </a></li>              
         </ul>  
       </nav>           
      </header>
@@ -34,3 +34,4 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar
+
