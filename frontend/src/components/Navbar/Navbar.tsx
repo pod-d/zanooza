@@ -1,6 +1,7 @@
 import Button from 'components/Button/Button';
 import './Navbar.css'
 
+
 const Navbar: React.FC = () => {
     
     const specialButtonStyle: React.CSSProperties = {
