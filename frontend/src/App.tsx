@@ -1,18 +1,14 @@
-import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "components/Navbar/Navbar";
-import Footer from "components/Footer/Footer";
-import Hero from "components/Hero/Hero";
-import CarouselCards from "components/CarouselCards/CarouselCards";
+import LandingPage from "Pages/LandingPage/LandingPage";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <CarouselCards />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
