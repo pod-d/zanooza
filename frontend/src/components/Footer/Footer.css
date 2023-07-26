@@ -3,11 +3,14 @@
   height: 500px;
 }
 .footer {
+  position: relative;
+  padding-top: 3%;
+  margin-top: 10%;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: auto;
 }
 .sb__footer {
   display: flex;

@@ -5,6 +5,7 @@ export const HeroContainer = styled.div`
   display: flex;
   height: 37.5rem;
   padding-top: 7.37rem;
+  background-color: whitesmoke;
 `;
 
 export const HeroLeft = styled.div`
