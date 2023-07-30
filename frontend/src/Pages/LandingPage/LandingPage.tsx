@@ -1,4 +1,5 @@
 import CarouselCards from "components/CarouselCards/CarouselCards";
+import Collection from "components/Collection/Collection";
 import Explore from "components/Explore/Explore";
 import FindOut from "components/FindOut/FindOut";
 import Footer from "components/Footer/Footer";
@@ -19,9 +20,11 @@ const LandingPage = () => {
       <Explore />
       <Trending />
       <FindOut />
+      <Collection />
       <Footer />
     </div>
   );
 };
 
 export default LandingPage;
+
