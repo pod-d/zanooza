@@ -1,6 +1,7 @@
 import Button from "components/Button/Button";
 import "./Navbar.css";
 import logo from "../../assets/Zannoza.jpeg";
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const specialButtonStyle: React.CSSProperties = {
@@ -18,19 +19,19 @@ const Navbar: React.FC = () => {
         <nav>
           <ul>
             <li>
-              <a href="/Game-experiences">Game experiences </a>
+              <Link to="/experience" >Game Experience</Link>
             </li>
             <li>
-              <a href="/Events">Events </a>
+            <Link to="/event" >Event</Link>
             </li>
             <li>
-              <a href="/Blog">Blog </a>
+             <Link to="/blog" >Blog</Link>
             </li>
             <li>
-              <a href="/Shop">Shop</a>
+              <Link to="/shop" >Shop</Link>
             </li>
             <li>
-              <a href="/About-Us">About Us </a>
+              <Link to="/about" >About</Link>
             </li>
           </ul>
         </nav>
