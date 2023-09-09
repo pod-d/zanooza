@@ -21,11 +21,45 @@ export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem 1rem;
+  // border:1px solid red;
 
   .arrowRight {
     margin-left: -4rem;
-    margin-top: auto
-    margin-bottom: auto
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .pinkcircle {
+    background: #ffb3e2;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  .circle1 {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 40rem;
+    margin-top: -5rem;
+  }
+  .circle2 {
+    width: 1rem;
+    height: 1rem;
+    margin-left: 80rem;
+    margin-top: -1.5rem;
+  }
+  .circle3 {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 37rem;
+    margin-left: -2rem;
+    z-index: -1;
+  }
+  .circle4 {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 36.5rem;
+    margin-left: 66rem;
+
   }
 `;
 

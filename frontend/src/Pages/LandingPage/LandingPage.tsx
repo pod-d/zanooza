@@ -2,10 +2,11 @@ import CarouselCards from "components/CarouselCards/CarouselCards";
 import Collection from "components/Collection/Collection";
 import Explore from "components/Explore/Explore";
 import FindOut from "components/FindOut/FindOut";
-import Footer from "components/Footer/Footer";
 import Hero from "components/Hero/Hero";
 import Navbar from "components/Navbar/Navbar";
 import Services from "components/Services/Services";
+import ShopSection2 from "components/Shop/ShopSection2";
+import ShopAndRentals from "components/ShopAndRentals/ShopAndRentals";
 import Trending from "components/Trending/Trending";
 import VideoSection from "components/VideoSection/VideoSection";
 
@@ -21,10 +22,10 @@ const LandingPage = () => {
       <Trending />
       <FindOut />
       <Collection />
-      <Footer />
+      <ShopAndRentals />
+      <ShopSection2 />
     </div>
   );
 };
 
 export default LandingPage;
-

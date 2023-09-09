@@ -13,7 +13,7 @@ const Collection = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
   const displayArrow = (index: number) => {
-    setCurrentIndex((prevIndex) => (prevIndex = index));
+    // setCurrentIndex((prevIndex) => (prevIndex = index));
   };
   return (
     <CollectionSectionWrapper>
@@ -26,6 +26,10 @@ const Collection = () => {
         />
       </Top>
       <CardsContainer>
+        <div className="pinkcircle circle1"></div>
+        <div className="pinkcircle circle2"></div>
+        <div className="pinkcircle circle3"></div>
+        <div className="pinkcircle circle4"></div>
         {collections.map((collection, index) => (
           <>
             <CollectionCard

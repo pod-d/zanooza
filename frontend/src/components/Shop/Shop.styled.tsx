@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-
 export const ShopContainer = styled.div`
   justify-content: center;
-  align-item: center;
+  align-items: center;
   height: auto;
   padding-top: 7.37rem;
   background-color: white;
-  
+  border: 1px solid purple;
+  width:100vw;
+
 
   .shopContent{
     color: black;
@@ -99,9 +100,13 @@ export const ShopContainer = styled.div`
 `;
 
 export const ShopSectionDiv = styled.div`
-//  border: 1px solid red;
- margin: 0 auto;
- width: fit-content;
+  border: 1px solid blue;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const ShopCardSection1 = styled.div`
@@ -179,96 +184,92 @@ export const ShopWrapper = styled.div`
 `;
 
 export const ShopCardSection2 = styled.div`
- 
-//  border: 1px solid red;
+  border: 1px solid green;
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
-  grid-template-rowss: 1fr 1fr; 
+  grid-template-rowss: 1fr 1fr;
   gap: 10px; /* Gap between grid items */
   margin: 0 auto;
   width: fit-content;
   padding: 0 6.5rem 6.5rem;
- overflow: scroll;
- 
+  overflow: scroll;
 `;
 
 export const FooterPage1 = styled.div`
-    position: absolute;
-    top:40;
-    left: 0;
-    z-index: 100;
-    background-color: black;
-//   display: flex;
-//   grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
-//   gap: 10px; /* Gap between grid items */
-//   margin: 20px auto;
-    width: 100%;
-    height: auto;
-//   padding: 0 6.5rem 6.5rem;
+  position: relative;
+  top: 40;
+  left: 0;
+  z-index: 100;
+  background-color: black;
+  //   display: flex;
+  //   grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
+  //   gap: 10px; /* Gap between grid items */
+  //   margin: 20px auto;
+  width: 100%;
+  height: auto;
+  //   padding: 0 6.5rem 6.5rem;
 
-    .FooterContentDiv{
-        margin-top: 5%;
-        text-align: center;
-        color: white;
-        span{
-            color: red;
-        }
+  .FooterContentDiv {
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    span {
+      color: red;
     }
-    .brick-wall {
-        display: flex;
-        margin-top: 3%;
-        flex-direction: column;
-        gap: 10px; /* Adjust the gap size as needed */
-      }
-      
-      .brick-row {
-        display: flex;
-        gap: 10px; /* Adjust the gap size between bricks in a row */
-      }
-      
-      .brick {
-        height: 50px; /* Height of each brick */
-        background-color: grey; /* Brick wall color */
-      }
-      
-      .brick-small {
-        width: 50px; /* Width of small bricks */
-      }
-      
-      .brick-medium {
-        width: 100px; /* Width of medium bricks */
-      }
-      
-      .brick-large {
-        width: 150px; /* Width of large bricks */
-      }
-      
-      
+  }
+  .brick-wall {
+    display: flex;
+    margin-top: 3%;
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap size as needed */
+  }
+
+  .brick-row {
+    display: flex;
+    gap: 10px; /* Adjust the gap size between bricks in a row */
+  }
+
+  .brick {
+    height: 50px; /* Height of each brick */
+    background-color: grey; /* Brick wall color */
+  }
+
+  .brick-small {
+    width: 50px; /* Width of small bricks */
+  }
+
+  .brick-medium {
+    width: 100px; /* Width of medium bricks */
+  }
+
+  .brick-large {
+    width: 150px; /* Width of large bricks */
+  }
 `;
 
 export const MemberBox = styled.div`
- gap: 8px;
- margin-top: 5%;
+  gap: 8px;
+  margin-top: 5%;
 
- .ManyBox{
+  .ManyBox {
     display: flex;
     padding: 23px 32px 23px 32px;
-    color:white;
+    color: white;
     gap: 8px;
- }
- .MemberParagraph{
-    border: 1px solid #FFFFFF;
+  }
+  .MemberParagraph {
+    border: 1px solid #ffffff;
     padding: 13px 32px 13px 32px;
     heigth: 236px;
     width: 320px;
     font-weigth: 450;
     font-size: 20px;
- }
+  }
 
- .MemberBoxFooter{
+  .MemberBoxFooter {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
- }
+  }
 `;

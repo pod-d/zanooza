@@ -9,7 +9,7 @@ const ShopPage = () => {
     <div>
       <Shop />
       <ShopSection2 />
-      <Footer />
+      {/* <Footer /> */}
       {/* <Footer1  /> */}
     </div>
   )

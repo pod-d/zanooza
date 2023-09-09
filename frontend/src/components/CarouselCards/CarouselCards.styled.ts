@@ -30,5 +30,6 @@ export const CarouselContainer = styled.div`
     margin-left: 81rem;
     margin-top: 8rem;
     position: absolute;
+    cursor: pointer;
   }
 `;
