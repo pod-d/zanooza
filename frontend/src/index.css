@@ -32,3 +32,50 @@ body {
   padding: 0;
   font-family: CircularStd-Book;
 }
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+.animate-typing {
+  animation: typing 3s steps(40, end) 1s infinite normal both;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.badge{
+  @apply bg-secondary-200 h-12 w-12 rounded-xl mb-1;
+}
+
+.card{
+  @apply border p-2 rounded-md col-span-1 mb-4 shadow-md ;
+}
+.small-blanks{
+  @apply h-44 w-1/3 bg-frames rounded-xl animate-pulse;
+}
+
+.big-blanks{
+  @apply h-44 w-2/3 bg-frames rounded-xl animate-pulse;
+}
+
+.profile-card{
+  @apply bg-whitesmoke h-72 w-72 rounded-xl overflow-hidden relative;
+}
+
+.projects{
+  @apply h-56 w-64 bg-secondary-100 rounded-xl hover:scale-110 overflow-hidden relative ;
+}
+
+.founders-card{
+  @apply shadow-md p-6 rounded-xl;
+}

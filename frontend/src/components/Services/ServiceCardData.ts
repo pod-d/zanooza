@@ -42,4 +42,5 @@ export const serviceCardData = [
     bgColor: "#EEF8F1",
     iconBgColor: "#BFECD6",
   },
+ 
 ];
