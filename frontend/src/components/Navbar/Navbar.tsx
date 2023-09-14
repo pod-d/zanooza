@@ -14,24 +14,24 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="container">
-      <img src={logo} alt="zanooza-logo" className="zannozalogo"/>
+        <img src={logo} alt="zanooza-logo" className="zannozalogo" /> 
       <header>
         <nav>
           <ul>
             <li>
-              <Link to="/experience" >Game Experience</Link>
+              <Link to="/experience">Game Experience</Link>
             </li>
             <li>
-            <Link to="/event" >Event</Link>
+              <Link to="/event">Event</Link>
             </li>
             <li>
-             <Link to="/blog" >Blog</Link>
+              <Link to="/blog">Blog</Link>
             </li>
             <li>
-              <Link to="/shop" >Shop</Link>
+              <Link to="/shop">Shop</Link>
             </li>
             <li>
-              <Link to="/about" >About</Link>
+              <Link to="/about">About</Link>
             </li>
           </ul>
         </nav>

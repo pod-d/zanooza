@@ -47,7 +47,7 @@ function Event() {
               backgroundColor: "#F4F4F4",
               width: "48%",
               minHeight: "2em",
-              padding: "0.7em",
+              padding: "0.9em",
               borderRadius: "12px",
               fontSize: "16px",
             }}
