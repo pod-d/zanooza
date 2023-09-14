@@ -3,6 +3,8 @@ export default {
   content: [
     "./src/components/About/**/*.tsx",
     "./src/components/Event/**/*.tsx",
+    "./src/components/Shop/**/*.tsx",
+    "./src/components/Blog/**/*.tsx",
   ],
   theme: {
     extend: {
@@ -14,6 +16,10 @@ export default {
         },
         frames: "#CCCCCC", //#F4F4F4
         whitesmoke: "#F5F5F5",
+        tag: {
+          text: "#F29C4A",
+          bg: "#FCF3EC",
+        },
       },
     },
   },
