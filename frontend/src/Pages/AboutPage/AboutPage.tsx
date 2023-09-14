@@ -1,9 +1,10 @@
 import Footer1 from "components/Footer/Footer1";
-import React from "react";
+import SectionOne from "components/About";
 
 const AboutPage = () => {
   return (
     <div>
+      <SectionOne />
       <Footer1 />
     </div>
   );
