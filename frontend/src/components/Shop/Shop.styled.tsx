@@ -6,7 +6,7 @@ export const ShopContainer = styled.div`
   height: auto;
   padding-top: 7.37rem;
   background-color: white;
-  border: 1px solid purple;
+  // border: 1px solid purple;
   width:100vw;
 
 
@@ -43,7 +43,7 @@ export const ShopContainer = styled.div`
             background: #F3EBFA;
             border-radius: 20px;
             padding: 12px 24px;
-            border: 1px solid #9031D0;
+            // border: 1px solid #9031D0;
             
     
             .shopPurple{
@@ -100,7 +100,7 @@ export const ShopContainer = styled.div`
 `;
 
 export const ShopSectionDiv = styled.div`
-  border: 1px solid blue;
+  // border: 1px solid blue;
   margin: 0 auto;
   width: 100%;
   display: flex;
@@ -184,7 +184,7 @@ export const ShopWrapper = styled.div`
 `;
 
 export const ShopCardSection2 = styled.div`
-  border: 1px solid green;
+  // border: 1px solid green;
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
@@ -198,7 +198,7 @@ export const ShopCardSection2 = styled.div`
 
 export const FooterPage1 = styled.div`
   position: relative;
-  top: 40;
+  // top: 40;
   left: 0;
   z-index: 100;
   background-color: black;
@@ -208,12 +208,12 @@ export const FooterPage1 = styled.div`
   //   margin: 20px auto;
   width: 100%;
   height: auto;
-  //   padding: 0 6.5rem 6.5rem;
+  // padding: 7.5rem 0;
 
   .FooterContentDiv {
-    margin-top: 5%;
     text-align: center;
     color: white;
+    padding-top: 7.5rem;
     span {
       color: red;
     }
@@ -254,9 +254,11 @@ export const MemberBox = styled.div`
 
   .ManyBox {
     display: flex;
-    padding: 23px 32px 23px 32px;
+    // padding: 23px 32px 23px 32px;
     color: white;
-    gap: 8px;
+    gap: 1.5rem;
+    // border: 1px solid red;
+    // justify-content: space-between;
   }
   .MemberParagraph {
     border: 1px solid #ffffff;

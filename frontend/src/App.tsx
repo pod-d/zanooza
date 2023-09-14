@@ -7,8 +7,7 @@ import EventPage from "Pages/EventPage/EventPage";
 import ShopPage from "Pages/ShopPage/ShopPage";
 import AboutPage from "Pages/AboutPage/AboutPage";
 import Footer from "components/Footer/Footer";
-
-
+import Contact from "components/ContactCard/Contact";
 
 function App() {
   return (
@@ -20,8 +19,8 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/about" element={<AboutPage />} />
-        
       </Routes>
+      <Contact />
       <Footer />
     </BrowserRouter>
   );

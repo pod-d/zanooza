@@ -28,7 +28,7 @@ const ShopAndRentalsCard: React.FC<SnRCardProps> = ({
   return (
     <>
       <Card>
-        <img src={cardImg} alt="product image" />
+        <img src={cardImg} alt="product" />
         <div className="tagwrapper">
           <div className="snr-tag">{tag1}</div>
           <div className="snr-tag">{tag2}</div>

@@ -3,9 +3,9 @@ import backgroundImage from "../../assets/dck1.png";
 
 export const HeroContainer = styled.div`
   display: flex;
-  height: 37.5rem;
-  padding-top: 7.37rem;
-  background-color: whitesmoke;
+  height: calc(100vh - 8.1rem);
+  margin-top: 8.1rem;
+  background-color: white;
 `;
 
 export const HeroLeft = styled.div`

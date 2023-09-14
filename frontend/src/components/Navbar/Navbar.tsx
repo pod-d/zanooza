@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="container">
+    <header className="container">
       <Link to={"/"}>
         <img src={logo} alt="zanooza-logo" className="zannozalogo" />
       </Link>
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         />
         <Button name={"Join Our Community"} color={"#A456D8"} />
       </div>
-    </div>
+    </header>
   );
 };
 

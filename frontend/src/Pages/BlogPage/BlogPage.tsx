@@ -8,7 +8,6 @@ const BlogPage = () => {
     <div>
       <Blog />
       <BlogCard />
-      <Contact />
     </div>
   )
 }
