@@ -1,7 +1,7 @@
 import Button from "components/Button/Button";
 import "./Navbar.css";
 import logo from "../../assets/Zannoza.jpeg";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const specialButtonStyle: React.CSSProperties = {
@@ -13,8 +13,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div className="container">
-        <img src={logo} alt="zanooza-logo" className="zannozalogo" /> 
+    <header className="container">
+      <Link to={"/"}>
+        <img src={logo} alt="zanooza-logo" className="zannozalogo" />
+      </Link>
       <header>
         <nav>
           <ul>
@@ -44,7 +46,7 @@ const Navbar: React.FC = () => {
         />
         <Button name={"Join Our Community"} color={"#A456D8"} />
       </div>
-    </div>
+    </header>
   );
 };
 

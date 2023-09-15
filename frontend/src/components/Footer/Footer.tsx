@@ -56,7 +56,7 @@ const Footer = () => {
               <p>Partners</p>
             </a>
             <a href="">
-              <p>Custormers</p>
+              <p>Customers</p>
             </a>
             <a href="">
               <p>Contact Us</p>

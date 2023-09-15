@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  padding-top: 5.37rem;
+  margin-top: 7.37rem;
   background-color: white;
 `;
 

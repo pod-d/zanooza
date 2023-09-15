@@ -1,4 +1,5 @@
 .App {
   text-align: center;
   font-family: CircularStd-Book;
+  max-width: 100vw;
 }

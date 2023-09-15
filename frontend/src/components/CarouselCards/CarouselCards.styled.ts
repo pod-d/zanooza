@@ -8,17 +8,18 @@ export const CardWrapper = styled.div`
   flex-shrink: 0;
   border-radius: 1rem;
   padding: 1rem;
+  z-index: -1;
 `;
 
 export const CarouselContainer = styled.div`
   display: flex;
   gap: 1rem;
   padding: 1.5rem;
-  overfow-x: scroll;
-  //   overfow: hidden;
+  // overfow-x: scroll;
+  overfow-x: hidden;
   width: 100vw;
   height: fit-content;
-//   border: 1px solid red;
+  // border: 1px solid red;
 
   .nextCard {
     width: 3.125rem;
@@ -28,6 +29,7 @@ export const CarouselContainer = styled.div`
     background: #fff;
     margin-left: 81rem;
     margin-top: 8rem;
-    position:absolute;
+    position: absolute;
+    cursor: pointer;
   }
 `;

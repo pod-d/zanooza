@@ -1,12 +1,13 @@
-import React from 'react'
-import Event from 'components/Event'
+import Footer1 from "components/Footer/Footer1";
+import Event from "components/Event";
 
 const EventPage = () => {
   return (
     <div>
-      <Event/>
+      <Event />
+      <Footer1 />
     </div>
-  )
-}
+  );
+};
 
-export default EventPage
+export default EventPage;

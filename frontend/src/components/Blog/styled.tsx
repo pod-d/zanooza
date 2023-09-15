@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-  padding-top: 5.37rem;
+  margin-top: 7.8rem;
   background-color: #fafafa;
 `;
 export const TopSection = styled.div`

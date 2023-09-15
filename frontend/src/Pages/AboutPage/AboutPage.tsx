@@ -1,11 +1,13 @@
-import React from 'react'
-import SectionOne from 'components/About'
+import Footer1 from "components/Footer/Footer1";
+import SectionOne from "components/About";
+
 const AboutPage = () => {
   return (
     <div>
-      <SectionOne/>
+      <SectionOne />
+      <Footer1 />
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;
