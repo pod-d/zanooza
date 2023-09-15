@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 import { GameProductCardProps } from "./GameProductCard";
 
 export const GameProductsWrapper = styled.section`

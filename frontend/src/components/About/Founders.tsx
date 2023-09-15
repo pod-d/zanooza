@@ -17,7 +17,7 @@ const Founders: React.FC<FoundersProps> = ({
   return (
     <div className=" founders-card">
       <div className="profile-card">
-        <img src={image} alt="founder" />
+        <img src={image} alt="founder" className='w-full' />
       </div>
       <p className="text-base mb-1">{name}</p>
       <p className="text-xs mb-1">{title}</p>
