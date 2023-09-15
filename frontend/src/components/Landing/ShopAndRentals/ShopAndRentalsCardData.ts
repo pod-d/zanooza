@@ -1,6 +1,6 @@
-import SnR1 from "../../assets/SnR1.png";
-import SnR2 from "../../assets/SnR2.png";
-import SnR3 from "../../assets/SnR3.png";
+import SnR1 from "../../../assets/SnR1.png";
+import SnR2 from "../../../assets/SnR2.png";
+import SnR3 from "../../../assets/SnR3.png";
 
 export const SnRData = [
   {

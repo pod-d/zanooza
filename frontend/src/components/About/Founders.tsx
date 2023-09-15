@@ -19,7 +19,7 @@ const Founders: React.FC<FoundersProps> = ({
       <div className="profile-card">
         <img src={image} alt="founder" className='w-full' />
       </div>
-      <p className="text-base mb-1">{name}</p>
+      <p className="text-base mt-1 mb-1">{name}</p>
       <p className="text-xs mb-1">{title}</p>
       <a href={linkedinUrl} target="_blank" rel="noreferrer">
         <img src={LinkedinLogo} alt="linkedln profile" className="w-5" />

@@ -14,9 +14,9 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="container">
-      <Link to={"/"}>
+      {/* <Link to={"/"}> */}
         <img src={logo} alt="zanooza-logo" className="zannozalogo" />
-      </Link>
+      {/* </Link> */}
       <header>
         <nav>
           <ul>
