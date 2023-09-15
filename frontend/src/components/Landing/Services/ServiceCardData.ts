@@ -1,9 +1,9 @@
-import icon1 from "../../assets/ant-design_team-outlined.svg";
-import icon2 from "../../assets/ph_game-controller.svg";
-import icon3 from "../../assets/mingcute_ghost-line.svg";
-import icon4 from "../../assets/material-symbols_content-paste.svg";
-import icon5 from "../../assets/material-symbols_work-outline.svg";
-import icon6 from "../../assets/material-symbols_computer-outline-rounded.svg";
+import icon1 from "../../../assets/ant-design_team-outlined.svg";
+import icon2 from "../../../assets/ph_game-controller.svg";
+import icon3 from "../../../assets/mingcute_ghost-line.svg";
+import icon4 from "../../../assets/material-symbols_content-paste.svg";
+import icon5 from "../../../assets/material-symbols_work-outline.svg";
+import icon6 from "../../../assets/material-symbols_computer-outline-rounded.svg";
 
 export const serviceCardData = [
   {

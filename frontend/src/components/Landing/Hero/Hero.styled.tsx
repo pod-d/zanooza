@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImage from "../../assets/dck1.png";
+import backgroundImage from "../../../assets/dck1.png";
 
 export const HeroContainer = styled.div`
   display: flex;

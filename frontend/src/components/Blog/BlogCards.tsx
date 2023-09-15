@@ -18,7 +18,7 @@ const BlogCards: React.FC<BlogCardsProps> = ({
   titleOfContent,
 }) => {
   return (
-    <div className="shadow-lg rounded-lg p-4 overflow-hidden mb-5 hover:scale-105">
+    <div className="shadow-lg rounded-lg p-4 overflow-hidden mb-5">
       <div className=" flex">
         <img src={authorImage} alt="profile" />
         <div className=" ml-5 ">
