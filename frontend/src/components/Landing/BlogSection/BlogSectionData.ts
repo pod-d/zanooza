@@ -1,7 +1,7 @@
-import avatar from "../../assets/blog-avatar.png";
-import image1 from "../../assets/blog-image1.png";
-import image2 from "../../assets/blog-image2.png";
-import image3 from "../../assets/blog-image3.png";
+import avatar from "../../../assets/blog-avatar.png";
+import image1 from "../../../assets/blog-image1.png";
+import image2 from "../../../assets/blog-image2.png";
+import image3 from "../../../assets/blog-image3.png";
 
 export interface BlogCardProps {
   avatar: string;

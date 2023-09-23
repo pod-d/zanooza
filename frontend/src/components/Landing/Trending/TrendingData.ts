@@ -1,7 +1,7 @@
-import trending1 from "../../assets/trending1.png";
-import trending2 from "../../assets/trending2.png";
-import trending3 from "../../assets/trending3.png";
-import trending4 from "../../assets/trending4.png";
+import trending1 from "../../../assets/trending1.png";
+import trending2 from "../../../assets/trending2.png";
+import trending3 from "../../../assets/trending3.png";
+import trending4 from "../../../assets/trending4.png";
 
 export const cardContent = [
   {

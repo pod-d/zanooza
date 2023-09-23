@@ -107,7 +107,7 @@ function SectionOne() {
       </OurStory>
       <Sections>
         <div className="h-full flex items-center">
-          <h3 className="text-3xl font-bold mb-5 mx-auto">Meet the founders</h3>
+          <h3 className="text-3xl font-bold mb-5 mx-auto">Meet the founder</h3>
         </div>
         <div className="flex justify-evenly ">
           {FoundersData.map((data, index) => (

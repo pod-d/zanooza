@@ -1,7 +1,7 @@
-import explore1 from "../../assets/explore1.png";
-import explore2 from "../../assets/explore2.png";
-import explore3 from "../../assets/explore3.png";
-import explore4 from "../../assets/explore4.png";
+import explore1 from "../../../assets/explore1.png";
+import explore2 from "../../../assets/explore2.png";
+import explore3 from "../../../assets/explore3.png";
+import explore4 from "../../../assets/explore4.png";
 
 export const imagesArr = [explore1, explore2, explore3, explore4];
 

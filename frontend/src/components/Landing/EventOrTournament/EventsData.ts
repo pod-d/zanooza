@@ -1,5 +1,5 @@
-import image1 from "../../assets/Event1.png";
-import image2 from "../../assets/Event2.png";
+import image1 from "../../../assets/Event1.png";
+import image2 from "../../../assets/Event2.png";
 
 export interface EventProps {
   image: string;

@@ -1,8 +1,13 @@
-import rec1 from "../../assets/Rectangle1.png";
-import rec2 from "../../assets/Rectangle2.png";
-import rec3 from "../../assets/Rectangle3.png";
-import rec4 from "../../assets/Rectangle4.png";
-import rec5 from "../../assets/Rectangle5.png";
+import rec1 from "../../../assets/Rectangle1.png";
+import rec2 from "../../../assets/Rectangle2.png";
+import rec3 from "../../../assets/Rectangle3.png";
+import rec4 from "../../../assets/Rectangle4.png";
+import rec5 from "../../../assets/Rectangle5.png";
+
+
+
+
+
 
 export const cardData = [
   "Unforgettable Game Experiences",

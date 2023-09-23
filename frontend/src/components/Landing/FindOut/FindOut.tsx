@@ -2,11 +2,11 @@ import Button from "components/Button/Button";
 import React from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 import { FindOutWrapper } from "./FindOut.styled";
-import vrheadset from "../../assets/vrheadset.png";
-import play from "../../assets/play.png";
-import gamepad from "../../assets/gamepad.png";
-import plus1 from "../../assets/plus1.png";
-import plus2 from "../../assets/plus2.png";
+import vrheadset from "../../../assets/vrheadset.png";
+import play from "../../../assets/play.png";
+import gamepad from "../../../assets/gamepad.png";
+import plus1 from "../../../assets/plus1.png";
+import plus2 from "../../../assets/plus2.png";
 
 const FindOut = () => {
   return (
