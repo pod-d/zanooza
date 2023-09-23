@@ -23,8 +23,9 @@ const ShopAndRentals = () => {
         <span>Rental</span>
       </div>
       <CardsWrapper>
-        {SnRData.map((data) => (
+        {SnRData.map((data, index) => (
           <ShopAndRentalsCard
+            key={index}
             cardImg={data.image}
             tag1={data.tag1}
             tag2={data.tag2}

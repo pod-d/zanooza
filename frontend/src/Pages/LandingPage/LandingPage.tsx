@@ -1,5 +1,8 @@
+import BlogSection from "components/BlogSection/BlogSection";
+import Brands from "components/Brands/Brands";
 import CarouselCards from "components/CarouselCards/CarouselCards";
 import Collection from "components/Collection/Collection";
+import Events from "components/EventOrTournament/Events";
 import Explore from "components/Explore/Explore";
 import FindOut from "components/FindOut/FindOut";
 import Footer1 from "components/Footer/Footer1";
@@ -25,6 +28,9 @@ const LandingPage = () => {
       <Collection />
       <ShopAndRentals />
       <GameProducts />
+      <Brands />
+      <Events />
+      <BlogSection />
       <Footer1 />
     </div>
   );
