@@ -23,12 +23,6 @@ export const CardsContainer = styled.div`
   gap: 2rem 1rem;
   // border:1px solid red;
 
-  .arrowRight {
-    margin-left: -4rem;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-
   .pinkcircle {
     background: #ffb3e2;
     border-radius: 50%;
@@ -59,7 +53,6 @@ export const CardsContainer = styled.div`
     height: 2rem;
     margin-top: 36.5rem;
     margin-left: 66rem;
-
   }
 `;
 
@@ -102,5 +95,16 @@ export const Right = styled.div`
     font-weight: 450;
     line-height: 1.375rem; /* 157.143% */
     letter-spacing: -0.0175rem;
+  }
+
+  .arrowRight {
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 11rem;
+    font-size: 2rem;
+    color: #a456d8;
+    // margin-left: -4rem;
+    // margin-top: auto;
+    // margin-bottom: auto;
   }
 `;
