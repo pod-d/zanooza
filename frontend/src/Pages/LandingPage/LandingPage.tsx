@@ -13,6 +13,7 @@ import BlogSection from "components/Landing/BlogSection/BlogSection";
 import Events from "components/Landing/EventOrTournament/Events";
 import Brands from "components/Landing/Brands/Brands";
 import Footer1 from "components/Footer/Footer1";
+import BackToTopBtn from "components/BackToTopBtn";
 
 const LandingPage = () => {
   return (
@@ -32,6 +33,7 @@ const LandingPage = () => {
       <Events />
       <BlogSection />
       <Footer1 />
+      <BackToTopBtn />
     </div>
   );
 };

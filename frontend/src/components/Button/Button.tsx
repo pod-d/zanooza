@@ -5,9 +5,18 @@ interface ButtonProps {
   icon?: ReactNode;
   color: string;
   style?: React.CSSProperties;
+  onClick?: () => void;
+  title?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ name, color, style, icon }) => {
+const Button: React.FC<ButtonProps> = ({
+  name,
+  color,
+  style,
+  icon,
+  onClick,
+  title,
+}) => {
   const buttonStyle: React.CSSProperties = {
     backgroundColor: color,
     color: "white",
@@ -19,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({ name, color, style, icon }) => {
   };
 
   return (
-    <button style={buttonStyle}>
+    <button style={buttonStyle} onClick={onClick} title={title}>
       {name}
       {icon}
     </button>
