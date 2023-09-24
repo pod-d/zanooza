@@ -1,5 +1,6 @@
 import Button from "components/Button/Button";
 import {
+  ButtomLine,
   CardDetails,
   CardImage,
   CardLeft,
@@ -16,9 +17,16 @@ const EventsCard: React.FC<EventProps> = ({
   organizer,
   gateFee,
   btnLabel,
+  index,
+  currentIndex,
+  handleMouseEnter,
+  handleMouseLeave,
 }) => {
   return (
-    <EventsCardWrapper>
+    <EventsCardWrapper
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <CardImage $bgImg={image}></CardImage>
       <CardDetails>
         <CardLeft>
@@ -32,6 +40,7 @@ const EventsCard: React.FC<EventProps> = ({
           <Button name={btnLabel} color="#fff" style={{ color: "#A456D8" }} />
         </CardRight>
       </CardDetails>
+      {index === currentIndex && <ButtomLine></ButtomLine>}
     </EventsCardWrapper>
   );
 };

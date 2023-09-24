@@ -18,7 +18,7 @@ export const VideoSectionWrapper = styled.div`
   }
 `;
 
-export const DarkBackground = styled.div`
+export const DarkBackground = styled.div<{ $bgImg: string }>`
   width: 56.25rem;
   height: 37.5rem;
   flex-shrink: 0;
@@ -26,8 +26,8 @@ export const DarkBackground = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  //   opacity: 0.4000000059604645;
-  background: var(--neutral-colors-black-200, #121212);
+  background: url("${({ $bgImg }) => $bgImg}") no-repeat center;
+  background-size: 100% 100%;
 `;
 export const PlayBtn = styled.button`
   width: 4rem;

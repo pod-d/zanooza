@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { memberData, star } from "./MemberData";
+import MemberCard from "./MemberCard";
 
 const Footer1 = () => {
   return (
@@ -68,59 +70,13 @@ const Footer1 = () => {
         </p>
       </div>
       <MemberBox>
-        <div className="ManyBox">
-          <div className="MemberParagraph">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud .
-            </p>
-
-            <div className="MemberBoxFooter">
-              <p>Logo</p>
-              <p>Logo</p>
-            </div>
-          </div>
-
-          <div className="MemberParagraph">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud .
-            </p>
-
-            <div className="MemberBoxFooter">
-              <p>Logo</p>
-              <p>Logo</p>
-            </div>
-          </div>
-
-          <div className="MemberParagraph">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud .
-            </p>
-
-            <div className="MemberBoxFooter">
-              <p>Logo</p>
-              <p>Logo</p>
-            </div>
-          </div>
-
-          <div className="MemberParagraph">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud .
-            </p>
-
-            <div className="MemberBoxFooter">
-              <p>Logo</p>
-              <p>Logo</p>
-            </div>
-          </div>
-        </div>
+        {memberData.map((data, index) => (
+          <MemberCard
+            key={index}
+            details={data}
+            stars={memberData.map(() => star)}
+          />
+        ))}
       </MemberBox>
     </FooterPage1>
   );
@@ -130,31 +86,44 @@ export default Footer1;
 
 export const FooterPage1 = styled.div`
   position: relative;
-  // top: 40;
   left: 0;
   z-index: 100;
   background-color: black;
-  //   display: flex;
-  //   grid-template-columns: 1fr 1fr 1fr; /* Three columns with equal width */
-  //   gap: 10px; /* Gap between grid items */
-  //   margin: 20px auto;
   width: 100%;
   height: auto;
-  // padding: 7.5rem 0;
 
   .FooterContentDiv {
     text-align: center;
     color: white;
     padding-top: 7.5rem;
+
+    h1 {
+      color: #fff;
+      font-size: 2.25rem;
+      font-weight: 700;
+      line-height: 2.75rem; /* 122.222% */
+      letter-spacing: -0.045rem;
+    }
+
+    p {
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 450;
+      line-height: 1.625rem; /* 144.444% */
+      letter-spacing: -0.0225rem;
+    }
+
     span {
-      color: red;
+      color: var(--primary-colors-pink-pink-600, #ff4680);
     }
   }
+
   .brick-wall {
     display: flex;
     margin-top: 3%;
     flex-direction: column;
     gap: 10px; /* Adjust the gap size as needed */
+    width: fit-content;
   }
 
   .brick-row {
@@ -163,48 +132,27 @@ export const FooterPage1 = styled.div`
   }
 
   .brick {
-    height: 50px; /* Height of each brick */
+    height: 5.5rem; /* Height of each brick */
     background-color: grey; /* Brick wall color */
   }
 
   .brick-small {
-    width: 50px; /* Width of small bricks */
+    width: 7.3125rem; /* Width of small bricks */
   }
 
   .brick-medium {
-    width: 100px; /* Width of medium bricks */
+    width: 12.5rem;
+    /* Width of medium bricks */
   }
 
   .brick-large {
-    width: 150px; /* Width of large bricks */
+    width: 18.1875rem; /* Width of large bricks */
   }
 `;
 
 export const MemberBox = styled.div`
-  gap: 8px;
-  margin-top: 5%;
-
-  .ManyBox {
-    display: flex;
-    // padding: 23px 32px 23px 32px;
-    color: white;
-    gap: 1.5rem;
-    // border: 1px solid red;
-    // justify-content: space-between;
-  }
-  .MemberParagraph {
-    border: 1px solid #ffffff;
-    padding: 13px 32px 13px 32px;
-    heigth: 236px;
-    width: 320px;
-    font-weigth: 450;
-    font-size: 20px;
-  }
-
-  .MemberBoxFooter {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+  gap: 1.5rem;
 `;
-

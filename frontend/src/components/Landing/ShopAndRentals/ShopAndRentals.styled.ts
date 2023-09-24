@@ -62,6 +62,7 @@ export const Card = styled.div`
   border: 1px solid var(--other-colors-bg-color-2, #f4f4f4);
   background: var(--neutral-colors-white, #fff);
   gap: 0.5rem;
+  position: relative;
 
   .tagwrapper {
     display: flex;
@@ -112,4 +113,13 @@ export const Card = styled.div`
       letter-spacing: -0.03rem;
     }
   }
+`;
+
+export const ButtomLine = styled.div`
+  width: 100%;
+  border: 3px solid hotpink;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 `;

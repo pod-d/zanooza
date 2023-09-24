@@ -5,6 +5,7 @@ import {
   AticleImageWrapper,
   AvatarWrapper,
   BlogCardWrapper,
+  BottomLine,
   CardTop,
   NameDuration,
 } from "./BlogSection.styled";
@@ -15,9 +16,16 @@ const BlogSectionCard: React.FC<BlogCardProps> = ({
   articleTitle,
   duration,
   name,
+  index,
+  currentIndex,
+  handleMouseEnter,
+  handleMouseLeave,
 }) => {
   return (
-    <BlogCardWrapper>
+    <BlogCardWrapper
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <CardTop>
         <AvatarWrapper $avatar={avatar}></AvatarWrapper>
         <NameDuration>
@@ -30,6 +38,7 @@ const BlogSectionCard: React.FC<BlogCardProps> = ({
         <Button name="Article" color="#FCF3EC" style={{ color: "#f29c4a" }} />
         <p>{articleTitle}</p>
       </AticleBottom>
+      {index === currentIndex && <BottomLine></BottomLine>}
     </BlogCardWrapper>
   );
 };

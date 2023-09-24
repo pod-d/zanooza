@@ -6,8 +6,10 @@ import {
   BlogSectionTop,
   BlogSectionCards,
 } from "./BlogSection.styled";
+import { useState } from "react";
 
 const BlogSection = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(-1);
   return (
     <BlogSectionWrapper>
       <BlogSectionTop>
@@ -22,13 +24,18 @@ const BlogSection = () => {
         />
       </BlogSectionTop>
       <BlogSectionCards>
-        {blogCardData.map((data) => (
+        {blogCardData.map((data, index) => (
           <BlogSectionCard
+            key={index}
             avatar={data.avatar}
             name={data.name}
             duration={data.duration}
             articleImage={data.articleImage}
             articleTitle={data.articleTitle}
+            index={index}
+            currentIndex={currentIndex}
+            handleMouseEnter={() => setCurrentIndex(index)}
+            handleMouseLeave={() => setCurrentIndex(-1)}
           />
         ))}
       </BlogSectionCards>

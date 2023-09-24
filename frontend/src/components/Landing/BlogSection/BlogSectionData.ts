@@ -9,6 +9,10 @@ export interface BlogCardProps {
   duration: string;
   articleImage: string;
   articleTitle: string;
+  index?: number;
+  currentIndex?: number;
+  handleMouseEnter?: () => void;
+  handleMouseLeave?: () => void;
 }
 
 export interface BlogCardStyledProps {

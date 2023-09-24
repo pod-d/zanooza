@@ -12,6 +12,7 @@ export const BlogCardWrapper = styled.div`
   border-radius: 0.5rem;
   border: 1px solid var(--other-colors-bg-color-2, #f4f4f4);
   background: var(--neutral-colors-white, #fff);
+  position: relative;
 `;
 
 export const CardTop = styled.div`
@@ -112,4 +113,13 @@ export const BlogSectionCards = styled.div`
   display: flex;
   gap: 1.5rem;
   margin: 0 auto;
+`;
+
+export const BottomLine = styled.div`
+  width: 100%;
+  border: 4px solid #03ba6c;
+  border-radius: 1rem;
+  position: absolute;
+  bottom:0;
+  left:0;
 `;

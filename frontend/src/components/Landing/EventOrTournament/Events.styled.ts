@@ -21,6 +21,7 @@ export const EventsCardWrapper = styled.div`
   gap: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--other-colors-bg-color-2, #f4f4f4);
+  position:relative;
 `;
 
 export const Top = styled.div`
@@ -120,4 +121,13 @@ export const CardRight = styled.div`
     line-height: 1.25rem; /* 142.857% */
     letter-spacing: -0.0175rem;
   }
+`;
+
+export const ButtomLine = styled.div`
+  width: 100%;
+  border: 4px solid orange;
+  border-radius:1rem;
+  position:absolute;
+  bottom:0;
+  left:0;
 `;
