@@ -13,10 +13,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className="container">
-      {/* <Link to={"/"}> */}
+    <header className="header-container">
+      <Link to={"/"}>
         <img src={logo} alt="zanooza-logo" className="zannozalogo" />
-      {/* </Link> */}
+      </Link>
       <header>
         <nav>
           <ul>

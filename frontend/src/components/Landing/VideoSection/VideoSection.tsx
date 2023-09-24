@@ -7,7 +7,7 @@ import {
   PlayBtn,
   VideoSectionWrapper,
 } from "./VideoSection.styled";
-import { AiOutlinePause } from "react-icons/ai";
+import { BsFillStopFill } from "react-icons/bs";
 import myGif from "../../../assets/gif.gif";
 import screenShot from "../../../assets/paused.png";
 
@@ -19,7 +19,7 @@ const VideoSection = () => {
       <DarkBackground $bgImg={play ? myGif : screenShot}>
         <PlayBtn>
           {play ? (
-            <AiOutlinePause className="play" onClick={() => setPlay(false)} />
+            <BsFillStopFill className="play" onClick={() => setPlay(false)} />
           ) : (
             <FaPlay className="play" onClick={() => setPlay(true)} />
           )}
