@@ -9,6 +9,11 @@ export interface EventProps {
   organizer: string;
   gateFee: string;
   btnLabel: string;
+  index?: number;
+  currentIndex?: number;
+  handleMouseEnter?:()=>void
+  handleMouseLeave?:()=>void
+
 }
 
 export const eventsDetails: EventProps[] = [

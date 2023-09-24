@@ -15,13 +15,21 @@ export const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-left: 1rem;
+  padding-bottom: 2rem;
+
+  h3 {
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.75rem; /* 122.222% */
+    letter-spacing: -0.045rem;
+  }
 `;
 
 export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem 1rem;
-  // border:1px solid red;
 
   .pinkcircle {
     background: #ffb3e2;

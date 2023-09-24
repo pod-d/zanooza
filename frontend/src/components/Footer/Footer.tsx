@@ -106,13 +106,13 @@ const Footer = () => {
           <div className="socialmedia">
             <ul className="social-icons">
               <li>
-                <a href="https://www.facebook.com">
-                  <FontAwesomeIcon icon={faFacebookF} />
+                <a href="https://www.linkedin.com">
+                  <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
+                <a href="https://www.facebook.com">
+                  <FontAwesomeIcon icon={faFacebookF} />
                 </a>
               </li>
               <li>
