@@ -23,7 +23,7 @@ export const GameExperienceWrapper = styled.div`
     }
   }
 
-  p {
+  .covered {
     color: var(--neutral-colors-black-200, #121212);
     text-align: center;
     font-size: 1.5rem;

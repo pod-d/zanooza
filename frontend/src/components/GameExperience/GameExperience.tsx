@@ -38,7 +38,7 @@ const GameExperience = () => {
       <h1>
         Find the perfect <span>Team Experience</span>
       </h1>
-      <p>Whatever your needs and preferences are, we’ve got you covered!</p>
+      <p className="covered">Whatever your needs and preferences are, we’ve got you covered!</p>
       <SelectWrapper>
         {defaultValues.map((value, index) =>
           index === 4 ? (
