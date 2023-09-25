@@ -47,6 +47,7 @@ export const CardContainer = styled.div`
     font-weight: 450;
     line-height: 1.5rem; /* 150% */
     letter-spacing: -0.02rem;
+    text-align: left;
   }
 
   .cardimage {

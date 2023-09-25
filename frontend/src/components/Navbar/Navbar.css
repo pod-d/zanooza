@@ -4,7 +4,7 @@
 }
 .header-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   width: 100vw;
   height: 5rem;
@@ -15,6 +15,7 @@
   z-index: 9999;
   top: 0;
   left: 0;
+  padding: 0 7.5rem;
 }
 
 .zannozalogo {
