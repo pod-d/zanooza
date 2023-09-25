@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { collections } from "./CollectionData";
 import CollectionCard from "./CollectionCard";
 import {
@@ -7,13 +7,12 @@ import {
   Top,
 } from "./Collection.styled";
 import Button from "components/Button/Button";
-import { BsArrowRightShort } from "react-icons/bs";
 
 const Collection = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
   const displayArrow = (index: number) => {
-    // setCurrentIndex((prevIndex) => (prevIndex = index));
+    setCurrentIndex(index);
   };
   return (
     <CollectionSectionWrapper>
@@ -31,17 +30,15 @@ const Collection = () => {
         <div className="pinkcircle circle3"></div>
         <div className="pinkcircle circle4"></div>
         {collections.map((collection, index) => (
-          <>
+          <Fragment key={index}>
             <CollectionCard
-              key={index}
               experience={collection}
               experienceCount={"00 experiences"}
               handleMouseEnter={() => displayArrow(index)}
+              index={index}
+              currentIndex={currentIndex}
             />
-            {index === currentIndex && (
-              <BsArrowRightShort className="arrowRight" />
-            )}
-          </>
+          </Fragment>
         ))}
       </CardsContainer>
     </CollectionSectionWrapper>

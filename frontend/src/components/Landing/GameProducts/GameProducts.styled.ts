@@ -51,11 +51,18 @@ export const Buttons = styled.div`
   margin-top: 1rem;
 
   button {
-    border: 1px solid red;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: normal;
+
+    svg {
+      width: 1.29544rem;
+      height: 1.5rem;
+    }
   }
 `;
 

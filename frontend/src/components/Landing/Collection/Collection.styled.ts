@@ -15,19 +15,21 @@ export const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-left: 1rem;
+  padding-bottom: 2rem;
+
+  h3 {
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.75rem; /* 122.222% */
+    letter-spacing: -0.045rem;
+  }
 `;
 
 export const CardsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem 1rem;
-  // border:1px solid red;
-
-  .arrowRight {
-    margin-left: -4rem;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
 
   .pinkcircle {
     background: #ffb3e2;
@@ -59,7 +61,6 @@ export const CardsContainer = styled.div`
     height: 2rem;
     margin-top: 36.5rem;
     margin-left: 66rem;
-
   }
 `;
 
@@ -102,5 +103,16 @@ export const Right = styled.div`
     font-weight: 450;
     line-height: 1.375rem; /* 157.143% */
     letter-spacing: -0.0175rem;
+  }
+
+  .arrowRight {
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: 11rem;
+    font-size: 2rem;
+    color: #a456d8;
+    // margin-left: -4rem;
+    // margin-top: auto;
+    // margin-bottom: auto;
   }
 `;

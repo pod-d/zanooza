@@ -1,38 +1,65 @@
-import React from 'react'
-import {ContactContainer, ContactBox,  ContactDiv } from './Contact.styled'
-
+import {
+  ContactContainer,
+  ContactBox,
+  ContactDiv,
+  SpiralVector,
+  ContactInfo,
+  ContactInfoWrapper,
+  ContactContent,
+} from "./Contact.styled";
+import { contactDetails } from "./ContactData";
 
 const Contact = () => {
   return (
     <ContactContainer>
-        <ContactBox>
-            <div className='ContactContent'>
-                <div className='contactDiv'>
-                    <h1>Contact Us</h1>
-                </div>
-                
-                <div className='contactParagraph'>
-                 <span>Our dedicated coordinators will help plan your experiences free of <br /> charge, allowing you to focus on your to-do list, <br /> while we handle the heavy lifting.</span> 
-                </div>
-
-
-              <div className='joinDiv'>
-                  <div>
-                    <button className='btnPhone'>+2340829867456</button>
-                    <button className='btnEmail'>zannoza@gmail.com</button>
-                  </div>
-
-                  <div>
-                  <button className='btnPhone'>+2340829867456</button>
-                  <button className='btnEmail'>zannoza@gmail.com</button>
-                </div>
-              </div>
-            </div>
-
-            <ContactDiv></ContactDiv>
-        </ContactBox>
+      <ContactBox>
+        <ContactContent>
+          <h1>Contact Us</h1>
+          <p>
+            Our dedicated coordinators will help plan your experiences free of{" "}
+            <br /> charge, allowing you to focus on your to-do list, <br />{" "}
+            while we handle the heavy lifting.
+          </p>
+          <ContactInfoWrapper>
+            {contactDetails.map((detail) => (
+              <ContactInfo>
+                {detail.icon}
+                <span>{detail.info}</span>
+              </ContactInfo>
+            ))}
+          </ContactInfoWrapper>
+        </ContactContent>
+        <ContactDiv></ContactDiv>
+        <Spiral className={"spiral1"} />
+        <Spiral className={"spiral2"} />
+        <Spiral className={"spiral3"} />
+        <Spiral className={"spiral4"} />
+        <Spiral className={"spiral5"} />
+        <Spiral className={"spiral6"} />
+        <Spiral className={"spiral7"} />
+        <Spiral className={"spiral8"} />
+      </ContactBox>
     </ContactContainer>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
+
+const Spiral = ({ className }: { className: string }) => {
+  return (
+    <SpiralVector
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      width="55"
+      height="54"
+      viewBox="0 0 55 54"
+      fill="none"
+    >
+      <path
+        d="M24.7635 27.0167C25.4637 26.7234 26.0794 26.2598 26.5547 25.6678C27.03 25.0759 27.3498 24.3744 27.4848 23.6274C27.6199 22.8803 27.566 22.1113 27.328 21.3904C27.09 20.6695 26.6755 20.0195 26.1222 19.4997C23.7401 17.2234 19.6637 18.3705 17.4227 20.2762C9.53516 26.9991 18.9228 37.9215 27.3926 36.4746C35.8625 35.0277 39.6032 23.8934 34.3625 17.3117C28.7689 10.2535 16.7169 11.524 11.2468 17.9999C5.14143 25.2345 6.94143 37.8333 15.8171 41.9976C23.8281 45.7561 34.8917 42.2447 38.5972 34.0572C43.0086 24.3345 37.4681 9.90068 25.9986 8.61256C15.0937 7.37738 6.87109 18.4234 6.8005 28.446C6.8005 39.6686 16.7525 48.8442 27.9751 46.7267C39.6917 44.521 46.044 33.1398 45.6205 21.882C45.1088 9.90071 37.3623 0.566078 24.7458 3.38935C19.8505 4.60809 15.4295 7.25842 12.0476 11.0018C8.66572 14.7451 6.47636 19.4116 5.75927 24.4052C4.83425 29.3607 5.73221 34.4836 8.28762 38.8291C10.843 43.1746 14.8833 46.4497 19.6637 48.0501C27.71 50.7499 37.6095 49.197 43.3795 42.6329C51.02 33.9513 49.2729 20.4879 43.644 11.2417C37.3446 0.936763 25.9988 -2.11602 15.1821 3.40702C10.344 5.94149 6.36359 9.85042 3.74184 14.6418C1.12009 19.4331 -0.0260108 24.8929 0.447962 30.334C1.19456 35.9706 3.68495 41.2328 7.57034 45.3839C11.4557 49.5351 16.5417 52.3675 22.1166 53.4849C42.5501 57.2433 63.354 35.31 50.6492 15.9706C48.2653 12.3181 44.613 9.67797 40.3971 8.55957C39.5325 8.31253 37.2917 9.61824 38.7915 10.0417C52.7491 13.9767 55.1313 33.1749 46.8026 43.3034C34.6273 58.1256 11.4233 53.2379 4.66504 35.8747C3.30011 32.2752 2.77822 28.4108 3.13915 24.5781C3.50009 20.7455 4.73458 17.0463 6.74752 13.7649C11.9353 5.08333 23.4225 -1.33961 33.2157 4.07755C46.2734 11.3475 52.0079 36.9157 37.3621 45.5091C30.7451 49.3911 21.6576 48.0853 15.6758 43.5505C12.9743 41.379 10.8783 38.5479 9.58949 35.3304C8.30063 32.1129 7.86252 28.6177 8.31777 25.1817C8.64867 21.5969 9.76984 18.13 11.6005 15.0301C13.4311 11.9303 15.9256 9.27451 18.9051 7.25382C23.7752 4.20116 30.2865 3.1953 35.3507 6.3009C39.3386 8.71833 41.3501 13.0767 42.303 17.5057C44.2616 26.6108 41.9675 37.5687 33.7271 42.9329C24.4632 48.9677 12.8704 43.0564 10.1353 32.9455C7.61201 23.5758 14.0702 7.46546 26.0162 10.4475C34.6978 12.5826 38.8267 23.2583 36.9387 31.3046C34.5036 41.6448 20.7049 45.8444 13.5938 37.3745C8.15895 30.9339 9.3235 18.8998 17.511 15.1943C27.1984 10.8006 37.2916 20.2409 32.9508 29.9635C30.1099 36.3688 22.3638 36.0159 18.7112 30.5458C18.0633 29.6754 17.6005 28.6815 17.3516 27.6254C17.1027 26.5692 17.073 25.4733 17.2641 24.4052C17.7406 22.2171 20.5639 17.5587 23.9518 20.8761C25.1164 22.0407 25.3279 25.0227 23.6163 25.8697C21.9046 26.7166 23.5106 27.6342 24.7105 26.9813L24.7635 27.0167Z"
+        fill="white"
+        fill-opacity="0.05"
+      />
+    </SpiralVector>
+  );
+};

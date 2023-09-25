@@ -4,8 +4,11 @@ import ShopAndRentalsCard from "./ShopAndRentalsCard";
 import { SnRData } from "./ShopAndRentalsCardData";
 import { BsCart2 } from "react-icons/bs";
 import { CardsWrapper, SectionWrapper } from "./ShopAndRentals.styled";
+import { useState } from "react";
 
 const ShopAndRentals = () => {
+  const [currentIndex, setCurrentIndex] = useState<number>(-1);
+
   return (
     <SectionWrapper>
       <div className="snrtop">
@@ -23,8 +26,9 @@ const ShopAndRentals = () => {
         <span>Rental</span>
       </div>
       <CardsWrapper>
-        {SnRData.map((data) => (
+        {SnRData.map((data, index) => (
           <ShopAndRentalsCard
+            key={index}
             cardImg={data.image}
             tag1={data.tag1}
             tag2={data.tag2}
@@ -34,6 +38,10 @@ const ShopAndRentals = () => {
             btnText={data.cartBtnText}
             btnBg={"#F3EBFA"}
             btnIcon={<BsCart2 />}
+            index={index}
+            currentIndex={currentIndex}
+            handleMouseEnter={() => setCurrentIndex(index)}
+            handleMouseLeave={() => setCurrentIndex(-1)}
           />
         ))}
       </CardsWrapper>

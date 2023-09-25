@@ -14,6 +14,7 @@ export const HeroLeft = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-left: 6rem;
   // border: 2px solid red;
 

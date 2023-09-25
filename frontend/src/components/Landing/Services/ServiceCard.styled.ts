@@ -12,8 +12,13 @@ export const ServiceCardsContainer = styled.div`
   h1 {
     grid-column: span 3;
     height: fit-content;
-    margin-top: auto;
-    margin-bottom: 2.37rem;
+    margin: auto;
+    text-align: center;
+    color: #000;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 2.75rem; /* 122.222% */
+    letter-spacing: -0.045rem;
   }
 `;
 
@@ -26,7 +31,14 @@ export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 1.5rem;
+  color: var(--neutral-colors-black-200, #121212);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.625rem; /* 144.444% */
+  letter-spacing: -0.0225rem;
 `;
 
 export const IconWrapper = styled.div`

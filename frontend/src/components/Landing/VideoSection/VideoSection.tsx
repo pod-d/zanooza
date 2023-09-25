@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPlay } from "react-icons/fa";
 import { bottomText } from "./BottomText";
 import {
@@ -7,14 +7,22 @@ import {
   PlayBtn,
   VideoSectionWrapper,
 } from "./VideoSection.styled";
+import { BsFillStopFill } from "react-icons/bs";
+import myGif from "../../../assets/gif.gif";
+import screenShot from "../../../assets/paused.png";
 
 const VideoSection = () => {
+  const [play, setPlay] = useState<boolean>(false);
   return (
     <VideoSectionWrapper>
       <h3>Learn what we do, end-to-end, in 2 minutes</h3>
-      <DarkBackground>
+      <DarkBackground $bgImg={play ? myGif : screenShot}>
         <PlayBtn>
-          <FaPlay className="play" />
+          {play ? (
+            <BsFillStopFill className="play" onClick={() => setPlay(false)} />
+          ) : (
+            <FaPlay className="play" onClick={() => setPlay(true)} />
+          )}
         </PlayBtn>
       </DarkBackground>
       <BottomTextWrapper>
