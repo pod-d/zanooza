@@ -69,6 +69,7 @@ function Event() {
             height: "36.75rem",
             overflowY: "scroll",
             border: " 1px solid #ccc",
+            paddingLeft: "2rem",
           }}
         >
           {eventCardData.map((data, index) => (
@@ -85,14 +86,14 @@ function Event() {
 
         <div className=" my-4 p-4 flex justify-center text-sm gap-2">
           <span>Page</span>
-          {"  "}
+         
           <select name="counter" id="counter" className="border-2 rounded w-12">
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-          </select>{" "}
+          </select>
           of 10
         </div>
       </SecondContainer>

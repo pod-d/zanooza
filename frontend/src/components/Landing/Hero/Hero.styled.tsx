@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   height: calc(100vh - 8.1rem);
   margin-top: 8.1rem;
   background-color: white;
+  // border: 2px solid green;
 `;
 
 export const HeroLeft = styled.div`
@@ -14,6 +15,7 @@ export const HeroLeft = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 6rem;
+  // border: 2px solid red;
 
   .desc {
     color: var(--neutral-colors-black-200, #121212);
@@ -46,6 +48,7 @@ export const HeroLeft = styled.div`
     font-family: CircularStd-Book;
     padding: 0 1rem 0 0;
     text-align: left;
+    // border: 1px solid red;
   }
 
   .bookjoinbtns {
@@ -116,7 +119,7 @@ export const HeroLeft = styled.div`
 
 export const HeroRight = styled.div`
   height: 100%;
-  //   border: 1px solid red;
+    // border: 1px solid blue;
   width: 50%;
   background-size: contain;
   background-repeat: no-repeat;

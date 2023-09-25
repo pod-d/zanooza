@@ -24,7 +24,7 @@ const BiggerCards: React.FC<BiggerCardsProps> = ({
         <div className="mt-2">
           <div className="flex justify-between items-center">
             <p className="font-bold">{eventName}</p>
-            <span className="text-xs text-[#32C687] bg-[#EEF8F1] ">
+            <span className="text-lg text-[#32C687] bg-[#EEF8F1] ">
               {amount}
             </span>
           </div>

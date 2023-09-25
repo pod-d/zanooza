@@ -21,6 +21,12 @@ export default {
           bg: "#FCF3EC",
         },
       },
+      fontFamily: {
+        black: ["CircularStd-Black", "sans"],
+        bold: ["CircularStd-Bold", "sans"],
+        book: ["CircularStd-Book", "sans"],
+        medium: ["CircularStd-Medium", "sans"],
+      },
     },
   },
   plugins: [],

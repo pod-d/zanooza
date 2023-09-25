@@ -32,7 +32,7 @@ const EventCard: React.FC<EventCardProps> = ({
           </p>
           <p className="text-xs font-light my-1">{eventLocation}</p>
         </div>
-        <span className="text-sm text-[#32C687] bg-[#EEF8F1] my-1">
+        <span className="text-lg text-[#32C687] bg-[#EEF8F1] my-1">
           {amount}
         </span>
         <div className="mt-4 ">

@@ -1,7 +1,7 @@
-import blueScreen from "../../assets/Blog4.png";
-import mic from '../../assets/Blog2.png';
-import lappy from '../../assets/Blog3.png';
-import proPic from "../../assets/Ellipse 4.png";
+import blueScreen from "../../../assets/Blog4.png";
+import mic from '../../../assets/Blog2.png';
+import lappy from '../../../assets/Blog3.png';
+import proPic from "../../../assets/Ellipse 4.png";
 
 
 const BlogCardData = [
