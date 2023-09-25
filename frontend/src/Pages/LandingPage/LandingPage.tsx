@@ -24,7 +24,7 @@ const LandingPage = () => {
       <Services />
       <VideoSection />
       <Explore />
-      <Trending />
+      <Trending showBtn={true} />
       <FindOut />
       <Collection />
       <ShopAndRentals />

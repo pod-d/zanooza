@@ -1,22 +1,43 @@
 import Button from "components/Button/Button";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { CardWrapper, CarouselContainer } from "./CarouselCards.styled";
 import { images, cardData, cardColors } from "./CardData";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import {
+  BsArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
 
 const CarouselCards: React.FC = () => {
-  const [currentCard, setCurrentCard] = useState(0);
-
-  const handleNextCard = () => {
-    setCurrentCard((prevCard) => (prevCard + 1) % cardData.length);
+  const [left, setLeft] = useState<number>(0);
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const scroll = (direction: "left" | "right", amount: number) => {
+    if (scrollContainerRef.current) {
+      if (direction === "left") {
+        // Scroll to the left
+        scrollContainerRef.current.scrollLeft -= amount;
+        setLeft(scrollContainerRef.current.scrollLeft);
+      } else if (direction === "right") {
+        // Scroll to the right
+        scrollContainerRef.current.scrollLeft += amount;
+        setLeft(scrollContainerRef.current.scrollLeft);
+      }
+    }
   };
-  
-  let first = cardData[0];
-  const newArr = [...cardData];
-  const filtered = newArr.filter((data, index) => index !== 0);
+
+  scrollContainerRef.current?.addEventListener("scroll", function name() {
+    // if (scrollContainerRef.current?.scrollLeft) {
+    // }
+  });
+  console.log(scrollContainerRef.current?.scrollLeft);
 
   return (
-    <CarouselContainer>
+    <CarouselContainer ref={scrollContainerRef}>
+      {left > 0 && (
+        <BsFillArrowLeftCircleFill
+          className="nextCard left"
+          onClick={() => scroll("left", 100)}
+        />
+      )}
       {cardData.map((data, index) => (
         <CardWrapper
           key={index}
@@ -38,7 +59,10 @@ const CarouselCards: React.FC = () => {
           )}
         </CardWrapper>
       ))}
-      <BsArrowRightCircleFill className="nextCard" />
+      <BsArrowRightCircleFill
+        className="nextCard"
+        onClick={() => scroll("right", 100)}
+      />
     </CarouselContainer>
   );
 };

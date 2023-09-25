@@ -34,6 +34,12 @@ body {
   overflow-x: hidden;
 }
 
+button,
+select,
+a {
+  cursor: pointer;
+}
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -53,6 +59,32 @@ body {
   }
 }
 
+/* Hide vertical scrollbar */
+::-webkit-scrollbar {
+  /* width: 0; */
+  /* Hide both vertical and horizontal scrollbars */
+  /* scrollbar-width: none; */
+
+  /* Hide only the vertical scrollbar (if needed) */
+  /* scrollbar-width: vertical; */
+
+  /* Hide only the horizontal scrollbar (if needed) */
+  scrollbar-width: horizontal;
+}
+
+/* Hide horizontal scrollbar (if needed) */
+::-webkit-scrollbar-horizontal {
+  display: none;
+  /* Hide both vertical and horizontal scrollbars */
+  /* scrollbar-width: none; */
+
+  /* Hide only the vertical scrollbar (if needed) */
+  /* scrollbar-width: vertical; */
+
+  /* Hide only the horizontal scrollbar (if needed) */
+  scrollbar-width: horizontal;
+}
+
 .badge {
   @apply bg-secondary-200 h-12 w-12 rounded-xl mb-1;
 }
@@ -68,15 +100,15 @@ body {
   @apply h-44 w-2/3 bg-[#FF4680] rounded-xl animate-pulse;
 }
 
-.profile-card{
-  @apply h-72  rounded-xl overflow-hidden ;
+.profile-card {
+  @apply h-72  rounded-xl overflow-hidden;
 }
 
 .projects {
   @apply h-56 w-64 bg-secondary-100 rounded-xl overflow-hidden relative;
 }
 
-.founders-card{
+.founders-card {
   @apply shadow-md p-6 rounded-xl w-96;
 }
 

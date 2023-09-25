@@ -4,16 +4,22 @@ import { cardContent } from "./TrendingData";
 import TrendingCard from "./TrendingCard";
 import { AllCards, TrendingWrapper } from "./Trending.styled";
 
-const Trending = () => {
+const Trending = ({ showBtn }: { showBtn: boolean }) => {
   return (
     <TrendingWrapper>
       <div className="sectiontop">
         <h3>Trending Game Experiences</h3>
-        <Button
-          name={"View all items"}
-          color={"#fff"}
-          style={{ color: "#A456D8", fontSize: "0.875rem", fontWeight: "500" }}
-        />
+        {showBtn && (
+          <Button
+            name={"View all items"}
+            color={"#fff"}
+            style={{
+              color: "#A456D8",
+              fontSize: "0.875rem",
+              fontWeight: "500",
+            }}
+          />
+        )}
       </div>
       <AllCards>
         {cardContent.map((content, index) => (

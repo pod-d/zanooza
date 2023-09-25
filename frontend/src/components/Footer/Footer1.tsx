@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { memberData, star } from "./MemberData";
 import MemberCard from "./MemberCard";
+import { Fragment } from "react";
 
 const Footer1 = () => {
   return (
@@ -74,7 +75,9 @@ const Footer1 = () => {
           <MemberCard
             key={index}
             details={data}
-            stars={memberData.map(() => star)}
+            stars={memberData.map((item, index) => (
+              <Fragment key={`${item}${index}`}>{star}</Fragment>
+            ))}
           />
         ))}
       </MemberBox>
@@ -152,7 +155,7 @@ export const FooterPage1 = styled.div`
 
 export const MemberBox = styled.div`
   display: flex;
-  justify-content: center;
   margin-top: 2.5rem;
   gap: 1.5rem;
+  overflow-x: auto;
 `;
