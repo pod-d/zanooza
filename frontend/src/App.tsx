@@ -8,7 +8,8 @@ import ShopPage from "Pages/ShopPage/ShopPage";
 import AboutPage from "Pages/AboutPage/AboutPage";
 import Footer from "components/Footer/Footer";
 import Contact from "components/ContactCard/Contact";
-import BlogCardContent from "Pages/BlogCardContentPage";
+import Content from "Pages/BlogContentPage";
+import GameExperience from "components/GameExperience/GameExperience";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/shop" element={<ShopPage />} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/blog/content" element={<BlogCardContent />} />
+        <Route path="/blog/content" element={<Content />} />
+        <Route path="/experience" element={<GameExperience />} />
       </Routes>
       <Contact />
       <Footer />
