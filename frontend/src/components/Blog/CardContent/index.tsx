@@ -41,28 +41,52 @@ function CardContent() {
             <Author
               image={proPic}
               name="Suzan Adinoyi"
-              timePosted="5 days ago"
+              timePosted="2 mins ago"
             />
             <div className=" mt-5 mb-2 ">
               <span className="text-base font-book">Share this Story</span>
             </div>
             <div className="flex gap-8">
-              <a href="https://www.linkedin.com/" target="_blank">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedinIn style={iconStyle} />
               </a>
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaFacebookF style={iconStyle} />
               </a>
-              <a href="https://www.twitter.com/" target="_blank">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaTwitter style={iconStyle} />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram style={iconStyle} />
               </a>
-              <a href="https://www.accounts.google.com/" target="_blank">
+              <a
+                href="https://www.accounts.google.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiMail style={iconStyle} />
               </a>
-              <a href="https://web.whatsapp.com/" target="_blank">
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaWhatsapp style={iconStyle} />
               </a>
             </div>
@@ -145,22 +169,46 @@ function CardContent() {
           <div className="flex flex-col space-y-4">
             <span className="block ">Share this Story</span>
             <div className="flex gap-8">
-              <a href="https://www.linkedin.com/" target="_blank">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaLinkedinIn style={iconStyle} />
               </a>
-              <a href="https://www.facebook.com/" target="_blank">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaFacebookF style={iconStyle} />
               </a>
-              <a href="https://www.twitter.com/" target="_blank">
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaTwitter style={iconStyle} />
               </a>
-              <a href="https://www.instagram.com/" target="_blank">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram style={iconStyle} />
               </a>
-              <a href="https://www.accounts.google.com/" target="_blank">
+              <a
+                href="https://www.accounts.google.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FiMail style={iconStyle} />
               </a>
-              <a href="https://web.whatsapp.com/" target="_blank">
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaWhatsapp style={iconStyle} />
               </a>
             </div>

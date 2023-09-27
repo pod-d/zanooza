@@ -8,7 +8,7 @@ import BottomSectionData from './BottomSectionData';
 function Shop() {
   return (
     <MainContainer>
-      <div className="my-5  w-1/2 m-auto ">
+      <div className="my-5 m-auto ">
         <h1 className="text-5xl m-auto text-center">
           Purchase amazing <span className="font-bold">Merch & Items</span>
         </h1>

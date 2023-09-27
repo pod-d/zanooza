@@ -22,7 +22,7 @@ const MerchCards: React.FC<MerchCardsProps> = ({
 }) => {
 
     return (
-      <div className="shadow-md w-96  p-4 my-4 ">
+      <div className="shadow-md w-96  p-4 my-4 group hover:border-[#FF69B4] border-b-8 rounded-lg border-transparent transition-transform duration-300 ease-in transform hover:scale-105 ">
         <img src={image} alt="merch" className="w-full" />
         <div className=" flex my-2 gap-5">
           <div className="tag-body">
@@ -37,7 +37,9 @@ const MerchCards: React.FC<MerchCardsProps> = ({
           <p className="text-xs text-[#A0A0A0]">{productDescription}</p>
         </div>
         <div className="flex justify-between items-center mt-4">
-          <span className="text-secondary-200 font-bold text-xl ">{amount}</span>
+          <span className="text-secondary-200 font-bold text-xl ">
+            {amount}
+          </span>
           <Button
             icon={<BsCart2 />}
             name={"Add to cart"}

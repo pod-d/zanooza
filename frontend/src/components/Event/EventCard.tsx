@@ -16,8 +16,8 @@ const EventCard: React.FC<EventCardProps> = ({
   amount,
 }) => {
   return (
-    <div >
-      <div className="shadow-md my-4 w-80 rounded relative p-4 overflow-hidden ">
+    <div>
+      <div className="shadow-md my-4 w-80 rounded relative p-4 overflow-hidden  ">
         <img
           src={image}
           alt="event"

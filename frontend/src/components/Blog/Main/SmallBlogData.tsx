@@ -4,7 +4,7 @@ import lappy from '../../../assets/Blog3.png';
 import proPic from "../../../assets/Ellipse 4.png";
 
 
-const BlogCardData = [
+const SmallCardData = [
   {
     cardImage: blueScreen,
     authorImage: proPic,
@@ -81,4 +81,4 @@ const BlogCardData = [
   
 ];
 
-export default BlogCardData;
+export default SmallCardData;

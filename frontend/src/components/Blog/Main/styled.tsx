@@ -5,8 +5,7 @@ export const MainContainer = styled.div`
   background-color: #fafafa;
 `;
 export const TopSection = styled.div`
-  display: flex;
-  justify-content: center;
+  
   width: 90%;
   margin: 20px auto;
 `;
