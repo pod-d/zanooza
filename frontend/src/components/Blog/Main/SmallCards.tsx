@@ -7,6 +7,7 @@ interface BlogCardsProps {
   timePosted: string;
   typeOfContent: string;
   titleOfContent: string;
+  onClick: ()=>void;
 }
 
 const BlogCards: React.FC<BlogCardsProps> = ({
@@ -16,9 +17,10 @@ const BlogCards: React.FC<BlogCardsProps> = ({
   timePosted,
   typeOfContent,
   titleOfContent,
+  onClick
 }) => {
   return (
-    <div className="shadow-lg rounded-lg p-4 overflow-hidden mb-5">
+    <div className="shadow-lg rounded-lg p-4 overflow-hidden mb-5 cursor-pointer" onClick={onClick}>
       <div className=" flex">
         <img src={authorImage} alt="profile" />
         <div className=" ml-5 ">
