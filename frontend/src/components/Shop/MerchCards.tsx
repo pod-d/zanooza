@@ -22,7 +22,7 @@ const MerchCards: React.FC<MerchCardsProps> = ({
 }) => {
 
     return (
-      <div className="shadow-md w-96  p-4 my-4 group hover:border-[#FF69B4] border-b-8 rounded-lg border-transparent transition-transform duration-300 ease-in transform hover:scale-105 ">
+      <div className="shadow-md w-96  p-4 my-4 group hover:border-[#FF69B4] border-b-8 rounded-lg border-transparent transition-transform duration-300 ease-in transform  ">
         <img src={image} alt="merch" className="w-full" />
         <div className=" flex my-2 gap-5">
           <div className="tag-body">

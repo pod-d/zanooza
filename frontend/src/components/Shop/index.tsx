@@ -1,9 +1,9 @@
-import React from 'react'
-import { MainContainer, TopSection, BottomSection } from './styled'
-import Button from 'components/Button/Button';
-import MerchCards from './MerchCards';
-import TopSectionData from './TopSectionData';
-import BottomSectionData from './BottomSectionData';
+import React from "react";
+import { MainContainer, TopSection, BottomSection, Container, RadioInput, Label } from "./styled";
+import Button from "components/Button/Button";
+import MerchCards from "./MerchCards";
+import TopSectionData from "./TopSectionData";
+import BottomSectionData from "./BottomSectionData";
 
 function Shop() {
   return (
@@ -39,10 +39,30 @@ function Shop() {
             Choose your <span className="text-[#FF4680]">preference</span>, I
             want to
           </h3>
-          <div className="flex justify-evenly items-center h-16 w-60 bg-secondary-100 border-2 border-secondary-200 rounded-xl">
-            <span className="bg-primary rounded-xl p-3 text-white">Shop</span>
-            <span className="text-secondary-200">Rent</span>
-          </div>
+          <form action="">
+            <Container>
+              <div>
+                <RadioInput
+                  type="radio"
+                  id="shop"
+                  name="preference"
+                  value="shop"
+                  defaultChecked
+                />
+                <Label htmlFor="shop">Shop</Label>
+              </div>
+              <div>
+                <RadioInput
+                  type="radio"
+                  id="rent"
+                  name="preference"
+                  value="rent"
+                />
+                <Label htmlFor="rent">Rent</Label>
+              </div>
+            </Container>
+            
+          </form>
         </div>
         <div className=" my-8">
           <input
@@ -76,7 +96,7 @@ function Shop() {
             height: "36.75rem",
             overflowY: "scroll",
             border: " 1px solid #ccc",
-            padding: "16px"
+            padding: "16px",
           }}
         >
           {BottomSectionData.map((data, index) => (
@@ -108,4 +128,4 @@ function Shop() {
   );
 }
 
-export default Shop
+export default Shop;
